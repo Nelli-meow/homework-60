@@ -1,12 +1,12 @@
 import './App.css'
-import Form from './components/Form/Form.tsx';
+import Container from './components/containers/container.tsx';
 
 const App = () => {
 
 
   return (
     <>
-      <Form/>
+      <Container/>
     </>
   )
 };
