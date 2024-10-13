@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from '../Button/Button.tsx';
 
 const Form: React.FC = () => {
   return (
@@ -13,7 +14,7 @@ const Form: React.FC = () => {
         <textarea className="form-control" placeholder="Leave a Message here" id="floatingTextarea"></textarea>
         <label htmlFor="floatingTextarea">Message</label>
       </div>
-      <button type="button" className="btn btn-danger mt-5" id="sendBtn">send</button>
+      <Button/>
     </div>
   );
 };
