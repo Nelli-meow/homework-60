@@ -1,12 +1,13 @@
-import Form from '../Form/Form.tsx';
-import Post from '../Post/Post.tsx';
+import Form from '../Form/Form';
+import Post from '../Post/Post';
 
 const Container = () => {
+
   return (
     <div>
-      <Form/>
-      <hr/>
-      <Post/>
+      <Form />
+      <hr />
+      <Post />
     </div>
   );
 };

@@ -1,7 +1,11 @@
+import React from 'react';
 
-const Button = () => {
+const Button: React.FC = () => {
   return (
-    <button type="button" className="btn btn-danger mt-5" id="sendBtn">send</button>
+    <button
+      type="submit"
+      className="btn btn-danger mt-5"
+      id="sendBtn">Send</button>
   );
 };
 
