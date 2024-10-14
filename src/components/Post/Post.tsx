@@ -16,19 +16,30 @@ const Post: React.FC = () => {
     try {
       const response = await fetch(url);
       const data: PostData[] = await response.json();
-      setPosts(data); // Обновляем состояние с полученными данными
-      console.log(data);
+
+
+
+      setPosts(data);
+
     } catch (error) {
       alert(error);
     }
   };
 
   useEffect(() => {
+
     getAllPosts();
+
+    const intervalId = setInterval(() => {
+      getAllPosts();
+    }, 2000);
+
+
+    return () => clearInterval(intervalId);
   }, []);
 
   return (
-    <div>
+    <div className="d-flex flex-column-reverse">
       {posts.map((post) => (
         <div key={post._id} className="mb-3 border p-4 d-grid align-items-center justify-content-start">
           <div>
